@@ -1,6 +1,6 @@
 class Api::PagesController < ApplicationController
   def get_fortune
-    @fortunes = ["You will find love in 7 days!", "You will pass your hardest class at the end of the semeter", "You will get to work on time today"]
+    @fortunes = ["You will do right by your family this week!", "You will make time for yourself this Saturday", "You will create an amazing app by the end of your coding bootcamp"]
     @fortunes = @fortunes.sample
     render "fortunes.json.jb"
   end
